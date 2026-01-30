@@ -27,7 +27,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useBack } from "@refinedev/core";
 import { Loader2 } from "lucide-react";
 import { classSchema } from "@/lib/schema";
-// import UploadWidget from "@/components/upload-widget";
+import UploadWidget from "@/components/upload-widget";
 import z from "zod";
 
 const ClassesCreate = () => {
@@ -110,7 +110,7 @@ const ClassesCreate = () => {
                         Banner Image <span className="text-orange-600">*</span>
                       </FormLabel>
                       <FormControl>
-                        {/* <UploadWidget
+                        <UploadWidget
                           value={
                             field.value
                               ? {
@@ -134,7 +134,7 @@ const ClassesCreate = () => {
                               });
                             }
                           }}
-                        /> */}
+                        />
                       </FormControl>
                       <FormMessage />
                       {errors.bannerCldPubId && !errors.bannerUrl && (
